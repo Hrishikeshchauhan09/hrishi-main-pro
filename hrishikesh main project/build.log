@@ -1,0 +1,114 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.hrishikesh:inventory-management >-----------------
+[INFO] Building inventory-management 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ inventory-management ---
+[INFO] Deleting C:\Users\Dinesh\Desktop\hrishikesh main project\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ inventory-management ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 6 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ inventory-management ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 15 source files with javac [debug release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[30,18] cannot find symbol
+  symbol:   method getItems()
+  location: variable order of type com.hrishikesh.inventory.entity.PurchaseOrder
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[31,40] cannot find symbol
+  symbol:   method getItems()
+  location: variable order of type com.hrishikesh.inventory.entity.PurchaseOrder
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[32,21] cannot find symbol
+  symbol:   method setPurchaseOrder(com.hrishikesh.inventory.entity.PurchaseOrder)
+  location: variable item of type com.hrishikesh.inventory.entity.OrderItem
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[34,48] cannot find symbol
+  symbol:   method getProduct()
+  location: variable item of type com.hrishikesh.inventory.entity.OrderItem
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[35,93] cannot find symbol
+  symbol:   method getProduct()
+  location: variable item of type com.hrishikesh.inventory.entity.OrderItem
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[46,18] cannot find symbol
+  symbol:   method getStatus()
+  location: variable order of type com.hrishikesh.inventory.entity.PurchaseOrder
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[51,36] cannot find symbol
+  symbol:   method getItems()
+  location: variable order of type com.hrishikesh.inventory.entity.PurchaseOrder
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[52,62] cannot find symbol
+  symbol:   method getProduct()
+  location: variable item of type com.hrishikesh.inventory.entity.OrderItem
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[56,44] cannot find symbol
+  symbol:   method getCurrentStock()
+  location: variable product of type com.hrishikesh.inventory.entity.Product
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[56,69] cannot find symbol
+  symbol:   method getQuantity()
+  location: variable item of type com.hrishikesh.inventory.entity.OrderItem
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[61,14] cannot find symbol
+  symbol:   method setStatus(com.hrishikesh.inventory.entity.PurchaseOrder.OrderStatus)
+  location: variable order of type com.hrishikesh.inventory.entity.PurchaseOrder
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/ProductService.java:[21,48] cannot find symbol
+  symbol:   method getSku()
+  location: variable product of type com.hrishikesh.inventory.entity.Product
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/ProductService.java:[22,69] cannot find symbol
+  symbol:   method getSku()
+  location: variable product of type com.hrishikesh.inventory.entity.Product
+[INFO] 13 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.645 s
+[INFO] Finished at: 2026-01-27T19:14:49+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project inventory-management: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[30,18] cannot find symbol
+[ERROR]   symbol:   method getItems()
+[ERROR]   location: variable order of type com.hrishikesh.inventory.entity.PurchaseOrder
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[31,40] cannot find symbol
+[ERROR]   symbol:   method getItems()
+[ERROR]   location: variable order of type com.hrishikesh.inventory.entity.PurchaseOrder
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[32,21] cannot find symbol
+[ERROR]   symbol:   method setPurchaseOrder(com.hrishikesh.inventory.entity.PurchaseOrder)
+[ERROR]   location: variable item of type com.hrishikesh.inventory.entity.OrderItem
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[34,48] cannot find symbol
+[ERROR]   symbol:   method getProduct()
+[ERROR]   location: variable item of type com.hrishikesh.inventory.entity.OrderItem
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[35,93] cannot find symbol
+[ERROR]   symbol:   method getProduct()
+[ERROR]   location: variable item of type com.hrishikesh.inventory.entity.OrderItem
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[46,18] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable order of type com.hrishikesh.inventory.entity.PurchaseOrder
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[51,36] cannot find symbol
+[ERROR]   symbol:   method getItems()
+[ERROR]   location: variable order of type com.hrishikesh.inventory.entity.PurchaseOrder
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[52,62] cannot find symbol
+[ERROR]   symbol:   method getProduct()
+[ERROR]   location: variable item of type com.hrishikesh.inventory.entity.OrderItem
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[56,44] cannot find symbol
+[ERROR]   symbol:   method getCurrentStock()
+[ERROR]   location: variable product of type com.hrishikesh.inventory.entity.Product
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[56,69] cannot find symbol
+[ERROR]   symbol:   method getQuantity()
+[ERROR]   location: variable item of type com.hrishikesh.inventory.entity.OrderItem
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/PurchaseOrderService.java:[61,14] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.hrishikesh.inventory.entity.PurchaseOrder.OrderStatus)
+[ERROR]   location: variable order of type com.hrishikesh.inventory.entity.PurchaseOrder
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/ProductService.java:[21,48] cannot find symbol
+[ERROR]   symbol:   method getSku()
+[ERROR]   location: variable product of type com.hrishikesh.inventory.entity.Product
+[ERROR] /C:/Users/Dinesh/Desktop/hrishikesh main project/src/main/java/com/hrishikesh/inventory/service/ProductService.java:[22,69] cannot find symbol
+[ERROR]   symbol:   method getSku()
+[ERROR]   location: variable product of type com.hrishikesh.inventory.entity.Product
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
