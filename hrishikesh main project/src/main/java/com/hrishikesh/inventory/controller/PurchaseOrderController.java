@@ -30,4 +30,43 @@ public class PurchaseOrderController {
     public ResponseEntity<PurchaseOrder> receiveGoods(@PathVariable Long id) {
         return ResponseEntity.ok(poService.receiveGoods(id));
     }
+
+    @PostMapping("/{id}/approve")
+    public ResponseEntity<PurchaseOrder> approveOrder(@PathVariable Long id) {
+        return ResponseEntity.ok(poService.approveOrder(id));
+    }
+
+    @PostMapping("/{id}/cancel")
+    public ResponseEntity<PurchaseOrder> cancelOrder(@PathVariable Long id) {
+        return ResponseEntity.ok(poService.cancelOrder(id));
+    }
+
+    @PostMapping("/{orderId}/receive-partial")
+    public ResponseEntity<PurchaseOrder> receivePartialGoods(
+            @PathVariable Long orderId,
+            @RequestBody PartialReceiptRequest request) {
+        return ResponseEntity.ok(poService.receivePartialGoods(orderId, request.getItemId(), request.getQuantity()));
+    }
+
+    // Inner class for partial receipt request
+    public static class PartialReceiptRequest {
+        private Long itemId;
+        private Integer quantity;
+
+        public Long getItemId() {
+            return itemId;
+        }
+
+        public void setItemId(Long itemId) {
+            this.itemId = itemId;
+        }
+
+        public Integer getQuantity() {
+            return quantity;
+        }
+
+        public void setQuantity(Integer quantity) {
+            this.quantity = quantity;
+        }
+    }
 }

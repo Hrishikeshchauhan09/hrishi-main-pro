@@ -23,6 +23,8 @@ public class OrderItem {
 
     private Integer quantity;
 
+    private Integer receivedQuantity = 0;
+
     private BigDecimal unitPrice;
 
     public Long getId() {
@@ -63,5 +65,13 @@ public class OrderItem {
 
     public void setUnitPrice(BigDecimal unitPrice) {
         this.unitPrice = unitPrice;
+    }
+
+    public Integer getReceivedQuantity() {
+        return receivedQuantity;
+    }
+
+    public void setReceivedQuantity(Integer receivedQuantity) {
+        this.receivedQuantity = receivedQuantity;
     }
 }
