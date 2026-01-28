@@ -100,7 +100,7 @@ async function loadProducts() {
             <tr>
                 <td>${p.sku}</td>
                 <td>${p.name}</td>
-                <td>$${p.unitPrice}</td>
+                <td>₹${p.unitPrice}</td>
                 <td>${p.currentStock}</td>
                 <td class="${statusClass}">${statusText}</td>
             </tr>
@@ -245,7 +245,7 @@ async function showPartialReceiptModal(orderId) {
                     </div>
                     <div class="modal-body">
                         <p><strong>Vendor:</strong> ${order.vendor.name}</p>
-                        <p><strong>Total Amount:</strong> $${order.totalAmount}</p>
+                        <p><strong>Total Amount:</strong> ₹${order.totalAmount}</p>
                         <hr>
                         <h6>Order Items:</h6>
     `;
@@ -411,7 +411,7 @@ async function loadProductsForSelect(selectElement) {
     const products = await res.json();
     selectElement.innerHTML = '<option value="">Select Product</option>';
     products.forEach(p => {
-        selectElement.innerHTML += `<option value="${p.id}">${p.name} ($${p.unitPrice})</option>`;
+        selectElement.innerHTML += `<option value="${p.id}">${p.name} (₹${p.unitPrice})</option>`;
     });
 }
 
@@ -441,7 +441,7 @@ async function loadPayments() {
                 <td>#${p.id}</td>
                 <td>#${p.purchaseOrder.id}</td>
                 <td>${p.purchaseOrder.vendor.name}</td>
-                <td>$${p.amount}</td>
+                <td>₹${p.amount}</td>
                 <td>${date}</td>
                 <td>${p.paymentMethod}</td>
                 <td><span class="badge bg-${statusColors[p.status]}">${p.status}</span></td>
@@ -462,7 +462,7 @@ function setupPaymentForm() {
 
         // Only show APPROVED or RECEIVED orders
         orders.filter(o => o.status === 'APPROVED' || o.status === 'RECEIVED').forEach(o => {
-            select.innerHTML += `<option value="${o.id}">Order #${o.id} - ${o.vendor.name} ($${o.totalAmount})</option>`;
+            select.innerHTML += `<option value="${o.id}">Order #${o.id} - ${o.vendor.name} (₹${o.totalAmount})</option>`;
         });
     });
 
@@ -480,9 +480,9 @@ function setupPaymentForm() {
         const summary = await res.json();
 
         summaryDiv.innerHTML = `
-            <strong>Order Total:</strong> $${summary.totalPaid + summary.outstanding}<br>
-            <strong>Total Paid:</strong> $${summary.totalPaid}<br>
-            <strong>Outstanding:</strong> <span class="text-${summary.outstanding > 0 ? 'danger' : 'success'}">$${summary.outstanding}</span>
+            <strong>Order Total:</strong> ₹${summary.totalPaid + summary.outstanding}<br>
+            <strong>Total Paid:</strong> ₹${summary.totalPaid}<br>
+            <strong>Outstanding:</strong> <span class="text-${summary.outstanding > 0 ? 'danger' : 'success'}">₹${summary.outstanding}</span>
         `;
 
         // Set max amount
